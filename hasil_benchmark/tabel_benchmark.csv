@@ -1,0 +1,4 @@
+Jumlah Client,Waktu Total (s),Latensi Rata-rata (s),Throughput (req/s),Speedup,Efisiensi (%)
+1,176.9,176.17,0.01,1.42,47.27
+5,1253.66,1240.83,0.0,1.42,47.27
+20,910.77,355.04,0.02,1.42,47.27
