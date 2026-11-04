@@ -122,7 +122,10 @@ Untuk mengeksekusi pengujian *Speedup* (1 Worker vs 3 Worker) serta pengujian be
 python3 src/benchmark.py
 
 ```
+```bash
+python3 src/buat_grafik.py
 
+```
 
 > **Catatan:** Setelah skrip ini selesai, tabel hasil pengujian akan tercetak di terminal, dan file laporan berupa tabel CSV serta grafik PNG beresolusi tinggi akan tersimpan otomatis di dalam folder `hasil_benchmark/`.
 
