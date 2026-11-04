@@ -1,0 +1,15 @@
+syntax = "proto3";
+package prime;
+
+service PrimeService {
+  rpc CheckHealth (Empty) returns (StatusResponse);
+  rpc FindPrimes (TaskRequest) returns (stream PrimeResult);
+  rpc GetMetrics (Empty) returns (StatusResponse);
+  rpc AbortTask (AbortRequest) returns (Empty);
+}
+
+message Empty {}
+message StatusResponse { bool is_alive = 1; string message = 2; }
+message TaskRequest { string request_id = 1; int64 start_num = 2; int64 end_num = 3; }
+message PrimeResult { int64 prime_number = 1; }
+message AbortRequest { string request_id = 1; }
