@@ -31,6 +31,7 @@ rpc_prima/
 ├── src/
 │   ├── master.py            # Logika utama client/master (Concurrency & Fault Tolerance)
 │   ├── worker.py            # Logika server pencari prima (gRPC Servicer)
+│   ├── buat_grafik.py       # Untuk generate grafik pada file benchmark.py
 │   └── benchmark.py         # Skrip otomatis pengujian kinerja (Speedup & Load Test)
 │
 ├── hasil_benchmark/         # Folder hasil keluaran otomatis
